@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="16dp"
+    android:layout_weight="100"
+    android:id="@+id/orderItem"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderName"
+        android:text="name"
+        android:layout_weight="33.3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderPrice"
+        android:text="name"
+        android:layout_weight="33.3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderQty"
+        android:text="name"
+        android:layout_weight="33.3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderAmount"
+        android:text="name"
+        android:layout_weight="33.3"/>
+
+    <Button
+        android:layout_width="5dp"
+        android:layout_height="35dp"
+        android:layout_weight="33.3"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="7dp"
+        android:textAllCaps="false"
+        android:id="@+id/orderDelete"
+        android:text="x" />
+</LinearLayout>

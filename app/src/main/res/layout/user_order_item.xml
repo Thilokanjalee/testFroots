@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/user_order_item_list"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_card"
+
+    >
+    <TextView
+        android:id="@+id/shopTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/shopTxtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shopTxtName"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/shopTxtOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shopTxtPrice"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/shopTxtReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shopTxtOrderId"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:textSize="16dp" />
+    <Button
+        android:id="@+id/collectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shopTxtReady"
+        android:background="@drawable/blue_button"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:text="@string/collect_your_order"/>
+</RelativeLayout>
