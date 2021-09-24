@@ -82,7 +82,7 @@ public class ShopOfferList extends AppCompatActivity {
                 holder.list_name.setText("Offer Name: " + model.getOffername());
                 holder.list_promo.setText("Promo Code: " + model.getPromocode());
                 holder.list_description.setText("Description: " + model.getOfferdescription());
-                //Picasso.get().load(model.getOfferimage()).into(holder.imageM);
+                Picasso.get().load(model.getOfferimage()).into(holder.imageM);
 
                 holder.parentLayout.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -91,7 +91,7 @@ public class ShopOfferList extends AppCompatActivity {
                         intent.putExtra("name", model.getOffername());
                         intent.putExtra("price", model.getPromocode());
                         intent.putExtra("description", model.getOfferdescription());
-//                        intent.putExtra("image", model.getImage());
+                        intent.putExtra("image", model.getOfferimage());
                         startActivity(intent);
                     }
                 });
@@ -166,7 +166,7 @@ public class ShopOfferList extends AppCompatActivity {
         private final TextView list_name;
         private final TextView list_promo;
         private final TextView list_description;
-        //private final ImageView imageM;
+        private final ImageView imageM;
         private final RelativeLayout parentLayout;
 
         public OffersViewHolder(@NonNull View offerView) {
@@ -176,7 +176,7 @@ public class ShopOfferList extends AppCompatActivity {
             list_promo = offerView.findViewById(R.id.txtPromoCode);
             list_description = offerView.findViewById(R.id.txtOfferDescription);
             parentLayout = offerView.findViewById(R.id.parent_layout);
-            //imageM = offerView.findViewById(R.id.offer_image);
+            imageM = offerView.findViewById(R.id.offer_image);
 
         }
 
