@@ -55,7 +55,7 @@ public class ShopOfferList extends AppCompatActivity {
         offerList = findViewById(R.id.recycler_view);
         BtnAddOffer = findViewById(R.id.BtnAddOffer);
 
-        Query query = firebaseFirestore.collection("offers");
+        Query query = firebaseFirestore.collection("offer");
         FirestoreRecyclerOptions<Offer> options = new FirestoreRecyclerOptions.Builder<Offer>().setQuery(query, Offer.class).build();
 
         BtnAddOffer.setOnClickListener(new View.OnClickListener() {

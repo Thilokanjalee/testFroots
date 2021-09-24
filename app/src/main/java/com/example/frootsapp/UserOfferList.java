@@ -53,7 +53,7 @@ public class UserOfferList extends AppCompatActivity {
         offerList = findViewById(R.id.recycler_view);
 
 
-        Query query = firebaseFirestore.collection("offers");
+        Query query = firebaseFirestore.collection("offer");
         FirestoreRecyclerOptions<Offer> options = new FirestoreRecyclerOptions.Builder<Offer>().setQuery(query, Offer.class).build();
 
 
