@@ -91,7 +91,7 @@ public class ShopOfferList extends AppCompatActivity {
                         intent.putExtra("name", model.getOffername());
                         intent.putExtra("price", model.getPromocode());
                         intent.putExtra("description", model.getOfferdescription());
-                        intent.putExtra("image", model.getOfferimage());
+                        //intent.putExtra("image", model.getOfferimage());
                         startActivity(intent);
                     }
                 });
