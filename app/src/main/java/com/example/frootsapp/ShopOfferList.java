@@ -176,7 +176,7 @@ public class ShopOfferList extends AppCompatActivity {
             list_promo = offerView.findViewById(R.id.txtPromoCode);
             list_description = offerView.findViewById(R.id.txtOfferDescription);
             parentLayout = offerView.findViewById(R.id.parent_layout);
-            imageM = offerView.findViewById(R.id.offer_image);
+            imageM = offerView.findViewById(R.id.offerImage);
 
         }
 
