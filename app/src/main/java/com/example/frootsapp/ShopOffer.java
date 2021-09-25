@@ -23,7 +23,7 @@ public class ShopOffer extends AppCompatActivity {
 
     private static final String TAG = "TAG";
     private TextView name;
-    private TextView promoCode;
+    private TextView promo;
     private TextView description;
     private ImageView image;
     private AlertDialog alertDialog;
@@ -39,7 +39,7 @@ public class ShopOffer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_offer_update);
         name = findViewById(R.id.shopOfferName);
-        promoCode = findViewById(R.id.shopOfferPromo);
+        promo = findViewById(R.id.shopOfferPromo);
         image = findViewById(R.id.offer_image_shop);
         description = findViewById(R.id.shopOfferDescription);
         btnDelete = findViewById(R.id.offerBtnDelete);
@@ -62,7 +62,7 @@ public class ShopOffer extends AppCompatActivity {
         offer1 = new Offer();
 
         name.setText("Offer Name : " + getIntent().getStringExtra("offername"));
-        promoCode.setText("Promo Code : " + getIntent().getStringExtra("promoCode"));
+        promo.setText("Promo Code : " + getIntent().getStringExtra("promocode"));
         description.setText("Offer Description : " + getIntent().getStringExtra("offerdescription"));
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,14 +75,14 @@ public class ShopOffer extends AppCompatActivity {
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                name.setText(getIntent().getStringExtra("name"));
-                promoCode.setText(getIntent().getStringExtra("promoCode"));
-                description.setText(getIntent().getStringExtra("description"));
+                name.setText(getIntent().getStringExtra("offername"));
+                promo.setText(getIntent().getStringExtra("promocode"));
+                description.setText(getIntent().getStringExtra("offerdescription"));
 
                 Intent intent = new Intent(v.getContext(), UpdateOffer.class);
-                intent.putExtra("name", name.getText().toString());
-                intent.putExtra("promoCode", promoCode.getText().toString());
-                intent.putExtra("description", description.getText().toString());
+                intent.putExtra("offername", name.getText().toString());
+                intent.putExtra("promocode", promo.getText().toString());
+                intent.putExtra("offerdescription", description.getText().toString());
                 startActivity(intent);
 
             }
