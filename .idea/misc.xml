@@ -9,16 +9,18 @@
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.21145833333333333" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.2703125" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/drawable/ic_pending_order.xml" value="0.2703125" />
+        <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/drawable/wave.xml" value="0.2703125" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/drawable/wave_pink.xml" value="0.2703125" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_add_item.xml" value="0.24728260869565216" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_add_offer.xml" value="0.24728260869565216" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_add_product.xml" value="0.24728260869565216" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_cart.xml" value="0.24728260869565216" />
-        <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_edit_user_profile.xml" value="0.13020833333333334" />
+        <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_edit_user_profile.xml" value="0.264" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_home.xml" value="0.24320652173913043" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_item.xml" value="0.24728260869565216" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_main.xml" value="0.24728260869565216" />
+        <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_offer.xml" value="0.2391304347826087" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_order.xml" value="0.24728260869565216" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_product.xml" value="0.24728260869565216" />
         <entry key="..\:/Anji/frootsApp - 22.09.2021 - 5.25PM/frootsApp/app/src/main/res/layout/activity_register_shop.xml" value="0.13020833333333334" />

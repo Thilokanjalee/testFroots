@@ -51,8 +51,8 @@
     <Button
         android:id="@+id/btnDelete"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="61dp"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/juiceDescription"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -62,7 +62,8 @@
         android:background="@drawable/button_next"
         android:text="@string/delete"
         android:textAllCaps="false"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnUpdate"
@@ -76,6 +77,7 @@
         android:background="@drawable/button_next"
         android:text="@string/update"
         android:textAllCaps="false"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        android:textSize="20sp" />
 
 </RelativeLayout>
