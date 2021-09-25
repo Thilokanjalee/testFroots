@@ -24,7 +24,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:textSize="16dp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/juicePrice"
@@ -35,7 +35,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:textSize="16dp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/juiceDescription"
@@ -46,39 +46,40 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:textSize="16dp" />
+        android:textSize="20sp" />
 
 
     <Button
         android:id="@+id/btnAmountNeg"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="55dp"
+        android:layout_height="38dp"
         android:layout_below="@+id/juiceDescription"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="75dp"
-        android:layout_marginEnd="309dp"
+        android:layout_marginEnd="326dp"
         android:background="#F06C93"
         android:text="-"
         android:textAllCaps="false"
-        android:textColor="#FFF" />
+        android:textColor="@color/black"
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/btnAmountAdd"
-        android:layout_width="64dp"
-        android:layout_height="28dp"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/juiceDescription"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="315dp"
         android:layout_marginTop="75dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginEnd="41dp"
         android:background="#F06C93"
         android:text="+"
         android:textAllCaps="false"
-        android:textColor="#FFF"
-        android:textSize="16dp" />
+        android:textColor="@color/black"
+        android:textSize="28sp" />
 
 
     <TextView
@@ -106,9 +107,11 @@
         android:layout_marginTop="67dp"
         android:layout_marginEnd="115dp"
         android:background="#F06C93"
+        android:fontFamily="@font/bubblegum_sans"
         android:text="@string/order"
         android:textAllCaps="false"
-        android:textColor="#FFF" />
+        android:textColor="@color/black"
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/juiceTotAmount"

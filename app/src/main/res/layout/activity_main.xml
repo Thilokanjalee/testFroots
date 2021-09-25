@@ -51,23 +51,24 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/button_update"
+        android:fontFamily="@font/bubblegum_sans"
         android:text="@string/squeeze"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906" />
+        app:layout_constraintVertical_bias="0.846" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="284dp"
-        android:layout_height="382dp"
+        android:layout_width="345dp"
+        android:layout_height="319dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />

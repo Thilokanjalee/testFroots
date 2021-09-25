@@ -40,7 +40,7 @@
         android:background="@drawable/button_next"
         android:fontFamily="@font/bubblegum_sans"
         android:text="@string/create"
-        android:textSize="24sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
             android:hint="@string/juice_name"
             android:inputType="textPersonName"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtPrice"
@@ -81,7 +81,7 @@
             android:hint="@string/price"
             android:inputType="textPersonName"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtJuiceDescription"
@@ -91,7 +91,7 @@
             android:hint="@string/description"
             android:inputType="textPersonName"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
     </LinearLayout>
 

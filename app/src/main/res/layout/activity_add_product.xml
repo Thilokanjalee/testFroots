@@ -27,7 +27,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/productName"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/product_price"
@@ -35,7 +36,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/productPrice"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/product_description"
@@ -43,7 +45,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/productDescription"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
 
     </LinearLayout>
@@ -57,8 +60,8 @@
         android:fontFamily="@font/bubblegum_sans"
         android:text="@string/save"
         android:textAllCaps="false"
-        android:textColor="#FFF"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
