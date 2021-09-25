@@ -28,6 +28,8 @@
         <activity android:name=".Item" />
         <activity android:name=".AddItem" />
         <activity android:name=".AddOfferActivity" />
+        <activity android:name=".ShopOffer" />
+        <activity android:name=".UpdateOffer" />
         <activity android:name=".EditUserProfile" />
         <activity android:name=".UserOfferList" />
         <activity
