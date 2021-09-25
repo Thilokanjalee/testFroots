@@ -9,7 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#F06C93</color>
     <color name="colorPrimaryDark">#F06C93</color>
-    <color name="colorAccent">#F7FF1D</color>
+    <color name="colorAccent">#F06C93</color>
+    <color name="colorAccent1">#F7FF1D</color>
     <color name="address">#2F7092</color>
     <color name="followers">#0D5D98</color>
     <color name="headings">#3797CF</color>

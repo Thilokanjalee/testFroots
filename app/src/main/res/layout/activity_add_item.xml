@@ -23,6 +23,7 @@
         android:id="@+id/addJuice"
         android:layout_width="139dp"
         android:layout_height="34dp"
+        android:fontFamily="@font/bubblegum_sans"
         android:text="@string/add_image"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,8 +67,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="sans-serif"
             android:hint="@string/juice_name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/txtPrice"
@@ -75,7 +79,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/price"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/txtJuiceDescription"
@@ -83,7 +89,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/description"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

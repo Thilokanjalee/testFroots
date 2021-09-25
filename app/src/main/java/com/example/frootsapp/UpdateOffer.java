@@ -111,7 +111,7 @@ public class UpdateOffer extends AppCompatActivity {
                 progressDialog.setMessage("Posting to database");
                 progressDialog.setCanceledOnTouchOutside(false);
                 progressDialog.show();
-                final StorageReference filepath = storageReference.child("offerimage").child(imageUri.getLastPathSegment());
+                final StorageReference filepath = storageReference.child("offerImage").child(imageUri.getLastPathSegment());
                 filepath.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
