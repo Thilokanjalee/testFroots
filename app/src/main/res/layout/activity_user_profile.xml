@@ -193,7 +193,7 @@
         app:srcCompat="@drawable/ic_baseline_edit_24" />
 
     <ImageButton
-        android:id="@+id/btnDelete"
+        android:id="@+id/offerBtnDelete"
         android:layout_width="158dp"
         android:layout_height="56dp"
         android:layout_alignParentEnd="true"

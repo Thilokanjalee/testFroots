@@ -75,7 +75,7 @@ public class UserProfile extends AppCompatActivity {
 
         profImage = findViewById(R.id.iv_EditprofImage);
         btnEditProfile = findViewById(R.id.btnEditProfile);
-        btnDeleteProfile = findViewById(R.id.btnDelete);
+        btnDeleteProfile = findViewById(R.id.offerBtnDelete);
         btnHome = findViewById(R.id.btnHome);
 
         fAuth = FirebaseAuth.getInstance();

@@ -12,17 +12,18 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.frootsapp.Model.Offer;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
 
-public class Item extends AppCompatActivity {
+public class ShopOffer extends AppCompatActivity {
 
     private static final String TAG = "TAG";
     private TextView name;
-    private TextView price;
+    private TextView promoCode;
     private TextView description;
     private ImageView image;
     private AlertDialog alertDialog;
@@ -31,16 +32,16 @@ public class Item extends AppCompatActivity {
     private FirebaseFirestore fStore;
     private FirebaseAuth fAuth;
 
-    Product prd;
+    Offer offer1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item);
-        name = findViewById(R.id.juiceName);
-        price = findViewById(R.id.juicePrice);
-        image = findViewById(R.id.product_image_shop);
-        description = findViewById(R.id.juiceDescription);
+        setContentView(R.layout.activity_shop_offer_update);
+        name = findViewById(R.id.shopOfferName);
+        promoCode = findViewById(R.id.shopOfferPromo);
+        image = findViewById(R.id.offer_image_shop);
+        description = findViewById(R.id.shopOfferDescription);
         btnDelete = findViewById(R.id.offerBtnDelete);
         btnUpdate = findViewById(R.id.offerBtnUpdate);
 
@@ -48,21 +49,21 @@ public class Item extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
 
         //to get image
-        fStore.collection("item").document(getIntent().getStringExtra("name"))
+        fStore.collection("offer").document(getIntent().getStringExtra("name"))
                 .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
-                com.example.frootsapp.Model.Product product = documentSnapshot.toObject(com.example.frootsapp.Model.Product.class);
-                Picasso.get().load(product.getImage()).into(image);
+                com.example.frootsapp.Model.Offer offer = documentSnapshot.toObject(com.example.frootsapp.Model.Offer.class);
+                Picasso.get().load(offer.getOfferimage()).into(image);
             }
         });
 
 
-        prd = new Product();
+        offer1 = new Offer();
 
-        name.setText("Name : " + getIntent().getStringExtra("name"));
-        price.setText("Price(LKR) : " + getIntent().getStringExtra("price"));
-        description.setText("Description : " + getIntent().getStringExtra("description"));
+        name.setText("Offer Name : " + getIntent().getStringExtra("name"));
+        promoCode.setText("Promo Code : " + getIntent().getStringExtra("promoCode"));
+        description.setText("Offer Description : " + getIntent().getStringExtra("description"));
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,12 +76,12 @@ public class Item extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 name.setText(getIntent().getStringExtra("name"));
-                price.setText(getIntent().getStringExtra("price"));
+                promoCode.setText(getIntent().getStringExtra("promoCode"));
                 description.setText(getIntent().getStringExtra("description"));
 
-                Intent intent = new Intent(v.getContext(), UpdateItem.class);
+                Intent intent = new Intent(v.getContext(), UpdateOffer.class);
                 intent.putExtra("name", name.getText().toString());
-                intent.putExtra("price", price.getText().toString());
+                intent.putExtra("promoCode", promoCode.getText().toString());
                 intent.putExtra("description", description.getText().toString());
                 startActivity(intent);
 
@@ -103,7 +104,7 @@ public class Item extends AppCompatActivity {
 
                         Log.i("MainActivity", "You choose Yes");
 
-                        FirebaseFirestore.getInstance().collection("item").document(getIntent().getStringExtra("name"))
+                        FirebaseFirestore.getInstance().collection("offer").document(getIntent().getStringExtra("name"))
                                 .delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {

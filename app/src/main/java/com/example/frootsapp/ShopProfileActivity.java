@@ -53,7 +53,7 @@ public class ShopProfileActivity extends AppCompatActivity {
         shopEmail = findViewById(R.id.txtEmailLabel);
         shopPhone = findViewById(R.id.txtPhoneLabel);
         btnEditShopAccount = findViewById(R.id.btnEditShopAccount);
-        btnDelete = findViewById(R.id.btnDelete);
+        btnDelete = findViewById(R.id.offerBtnDelete);
         btnHome = findViewById(R.id.btnHome);
         View imgLogo = findViewById(R.id.imgLogo);
         fAuth = FirebaseAuth.getInstance();
