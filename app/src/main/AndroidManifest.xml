@@ -15,7 +15,6 @@
         <activity android:name=".ShopUpdate"/>
         <activity android:name=".UserOrders" />
         <activity android:name=".ShopOrderList" />
-        <activity android:name=".ShopOfferList" />
         <activity android:name=".ShopOrders" />
         <activity android:name=".CartActivity" />
         <activity android:name=".ShopLoginActivity" />
@@ -31,6 +30,7 @@
         <activity android:name=".ShopOffer" />
         <activity android:name=".UpdateOffer" />
         <activity android:name=".EditUserProfile" />
+        <activity android:name=".ShopOfferList" />
         <activity android:name=".UserOfferList" />
         <activity
             android:name=".UserProfile"

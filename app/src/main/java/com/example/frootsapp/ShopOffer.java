@@ -49,7 +49,7 @@ public class ShopOffer extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
 
         //to get image
-        fStore.collection("offer").document(getIntent().getStringExtra("name"))
+        fStore.collection("offer").document(getIntent().getStringExtra("offername"))
                 .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -61,9 +61,9 @@ public class ShopOffer extends AppCompatActivity {
 
         offer1 = new Offer();
 
-        name.setText("Offer Name : " + getIntent().getStringExtra("name"));
+        name.setText("Offer Name : " + getIntent().getStringExtra("offername"));
         promoCode.setText("Promo Code : " + getIntent().getStringExtra("promoCode"));
-        description.setText("Offer Description : " + getIntent().getStringExtra("description"));
+        description.setText("Offer Description : " + getIntent().getStringExtra("offerdescription"));
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,7 +104,7 @@ public class ShopOffer extends AppCompatActivity {
 
                         Log.i("MainActivity", "You choose Yes");
 
-                        FirebaseFirestore.getInstance().collection("offer").document(getIntent().getStringExtra("name"))
+                        FirebaseFirestore.getInstance().collection("offer").document(getIntent().getStringExtra("offername"))
                                 .delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {

@@ -87,10 +87,10 @@ public class ShopOfferList extends AppCompatActivity {
                 holder.parentLayout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(ShopOfferList.this, Offer.class);
-                        intent.putExtra("name", model.getOffername());
-                        intent.putExtra("price", model.getPromocode());
-                        intent.putExtra("description", model.getOfferdescription());
+                        Intent intent = new Intent(ShopOfferList.this, ShopOffer.class);
+                        intent.putExtra("offername", model.getOffername());
+                        intent.putExtra("promocode", model.getPromocode());
+                        intent.putExtra("offerdescription", model.getOfferdescription());
                         //intent.putExtra("image", model.getOfferimage());
                         startActivity(intent);
                     }
