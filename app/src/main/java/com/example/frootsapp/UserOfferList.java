@@ -73,17 +73,17 @@ public class UserOfferList extends AppCompatActivity {
                 holder.list_description.setText("Description: " + model.getOfferdescription());
                 Picasso.get().load(model.getOfferimage()).into(holder.imageM);
 
-                holder.parentLayout.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(UserOfferList.this, ShopOffer.class);
-                        intent.putExtra("offername", model.getOffername());
-                        intent.putExtra("promocode", model.getPromocode());
-                        intent.putExtra("offerdescription", model.getOfferdescription());
-                        //intent.putExtra("image", model.getImage());
-                        startActivity(intent);
-                    }
-                });
+//                holder.parentLayout.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        Intent intent = new Intent(UserOfferList.this, ShopOffer.class);
+//                        intent.putExtra("offername", model.getOffername());
+//                        intent.putExtra("promocode", model.getPromocode());
+//                        intent.putExtra("offerdescription", model.getOfferdescription());
+//                        //intent.putExtra("image", model.getImage());
+//                        startActivity(intent);
+//                    }
+//                });
             }
         };
 

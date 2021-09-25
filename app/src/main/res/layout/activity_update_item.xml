@@ -158,6 +158,7 @@
         android:layout_marginBottom="28dp"
         android:background="@drawable/button_next"
         android:fontFamily="@font/bubblegum_sans"
+        android:onClick="btn_onclick"
         android:text="Save" />
 
 
