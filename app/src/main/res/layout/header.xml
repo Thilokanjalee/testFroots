@@ -12,9 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="78dp"
+        android:fontFamily="@font/bubblegum_sans"
         android:text="Froots"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp" />
+        android:textColor="@color/black"
+        android:textSize="50sp" />
 
     //need to implement to get user name in the header
 

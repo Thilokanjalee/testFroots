@@ -10,10 +10,11 @@
 
     <ImageView
         android:id="@+id/product_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        />
+        android:layout_width="394dp"
+        android:layout_height="286dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/juiceName"
@@ -93,7 +94,7 @@
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="3dp"
         android:layout_toEndOf="@+id/btnAmountNeg"
-        android:textSize="16dp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnOrder"
@@ -108,7 +109,7 @@
         android:layout_marginEnd="115dp"
         android:background="#F06C93"
         android:fontFamily="@font/bubblegum_sans"
-        android:text="@string/order"
+        android:text="ORDER"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="28sp" />
@@ -119,11 +120,11 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/btnAmountNeg"
         android:layout_alignBottom="@+id/btnAmountNeg"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="111dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="-47dp"
+        android:layout_marginBottom="-46dp"
         android:layout_toEndOf="@+id/btnAmountNeg"
-        android:textSize="16dp" />
+        android:textSize="20sp" />
 
 </RelativeLayout>

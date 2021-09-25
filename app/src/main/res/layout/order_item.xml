@@ -7,38 +7,50 @@
     android:layout_weight="100"
     android:id="@+id/orderItem"
     >
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/orderName"
-        android:text="name"
-        android:layout_weight="33.3"/>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
         android:id="@+id/orderPrice"
-        android:text="name"
-        android:layout_weight="33.3"/>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
         android:id="@+id/orderQty"
-        android:text="name"
-        android:layout_weight="33.3"/>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/orderAmount"
+        android:layout_weight="33.3"
         android:text="name"
-        android:layout_weight="33.3"/>
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/orderAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <Button
+        android:id="@+id/orderDelete"
         android:layout_width="5dp"
         android:layout_height="35dp"
-        android:layout_weight="33.3"
         android:layout_marginEnd="20dp"
+        android:layout_weight="33.3"
         android:paddingTop="7dp"
-        android:textAllCaps="false"
-        android:id="@+id/orderDelete"
-        android:text="x" />
+        android:text="x"
+        android:textAllCaps="false" />
 </LinearLayout>

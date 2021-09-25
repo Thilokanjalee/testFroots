@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Order"
+    tools:context=".OrderActivity"
     android:padding="10dp"
     android:id="@+id/orderLayout">
 
@@ -23,27 +23,29 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/juicePrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/juiceName"
-        android:layout_margin="10dp"
-        android:textSize="16dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/juiceDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/juicePrice"
-        android:layout_margin="10dp"
-        android:layout_marginTop="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:textSize="16dp" />
-
-
+        android:textSize="16sp" />
 
 
     <TextView
@@ -56,8 +58,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="13dp"
-        android:layout_toEndOf="@+id/btnAmount"
-        android:textSize="16dp" />
+        android:textSize="16sp"
+        tools:ignore="UnknownId" />
 
 
     <Button
@@ -75,7 +77,8 @@
         android:background="@color/colorAccent"
         android:text="@string/delete"
         android:textAllCaps="false"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnEdit"
@@ -92,6 +95,7 @@
         android:background="@color/colorAccent"
         android:text="@string/edit"
         android:textAllCaps="false"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        android:textSize="16sp" />
 
 </RelativeLayout>

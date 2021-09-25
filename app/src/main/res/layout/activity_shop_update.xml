@@ -107,8 +107,9 @@
                         android:id="@+id/txtShopNameLbl"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:text="@string/lblShopUpdateName"
-                        android:textColor="@color/headings"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <EditText
@@ -136,8 +137,9 @@
                         android:id="@+id/txtShopOwnerNameLbl"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:text="@string/lblShopUpdateOwName"
-                        android:textColor="@color/headings"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
 
@@ -166,8 +168,9 @@
                         android:id="@+id/txtShopPhoneLbl"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:text="@string/lblShopUpdatePhone"
-                        android:textColor="@color/headings"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <EditText
@@ -194,8 +197,9 @@
                         android:id="@+id/txtShopEmailLbl"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:text="@string/lblShopUpdateEmail"
-                        android:textColor="@color/headings"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <EditText
@@ -222,8 +226,9 @@
                         android:id="@+id/txtShopLocationLbl"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:text="@string/lblShopUpdateLocation"
-                        android:textColor="@color/headings"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <EditText
@@ -247,8 +252,10 @@
             android:layout_height="50dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/button_next"
+            android:fontFamily="@font/bubblegum_sans"
             android:text="@string/btnShopUpdateSave"
-            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
