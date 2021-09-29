@@ -69,9 +69,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Name"
-                    android:textColor="@color/headings"
-                    android:textSize="13sp" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtName"
@@ -97,9 +98,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Price"
-                    android:textColor="@color/headings"
-                    android:textSize="13sp" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
 
                 <EditText
@@ -126,9 +128,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Description"
-                    android:textColor="@color/headings"
-                    android:textSize="13sp" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/txtDescription"
