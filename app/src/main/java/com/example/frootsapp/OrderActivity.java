@@ -102,7 +102,7 @@ public class OrderActivity extends AppCompatActivity {
             }
         });
 
-
+        //Insert
         orderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

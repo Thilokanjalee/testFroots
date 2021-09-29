@@ -95,7 +95,7 @@ public class AddProductActivity extends AppCompatActivity {
                 final String price = product_price.getText().toString().trim();
                 final String description = product_description.getText().toString().trim();
 
-
+                //Validations
                 if (TextUtils.isEmpty(name)) {
                     Toast.makeText(AddProductActivity.this, "please enter name", Toast.LENGTH_SHORT).show();
                 } else if (TextUtils.isEmpty(price)) {
@@ -104,6 +104,7 @@ public class AddProductActivity extends AppCompatActivity {
                     Toast.makeText(AddProductActivity.this, "Please enter description", Toast.LENGTH_SHORT).show();
                 } else if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(price) && !TextUtils.isEmpty(description) && imageUri != null) {
 
+                    //Insert product
                     final StorageReference filepath = storageReference.child("product_image").child(imageUri.getLastPathSegment());
                     filepath.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
@@ -124,7 +125,7 @@ public class AddProductActivity extends AppCompatActivity {
                                     documentReference.set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
                                         public void onSuccess(Void aVoid) {
-                                            Log.d(TAG, "onSuccess: hari bn  ");
+                                            Log.d(TAG, "onSuccess: Complete add product  ");
                                             navigateProductList();
 
 

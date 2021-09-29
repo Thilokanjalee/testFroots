@@ -60,6 +60,7 @@ public class UserProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
+        //transitions
         Fade fade = new Fade();
         View decor = getWindow().getDecorView();
         fade.excludeTarget(decor.findViewById(R.id.action_bar_container), true);
@@ -153,7 +154,7 @@ public class UserProfile extends AppCompatActivity {
 
 
     }
-
+    //Delete the account
     private void deleteAccount() {
         AlertDialog alertDialog = new AlertDialog.Builder(this)
                 .setTitle("Confirmation")

@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         txtAccountNav = findViewById(R.id.txtIDontHaveAccount);
         login_contact = findViewById(R.id.login_contact);
         login_password = findViewById(R.id.login_password);
@@ -77,6 +78,7 @@ public class LoginActivity extends AppCompatActivity {
         String contact = login_contact.getText().toString().trim();
         String password = login_password.getText().toString().trim();
 
+        //validations for the email and password feilds
         if (TextUtils.isEmpty(contact)) {
             login_contact.setError("Email is Required");
             return;
@@ -96,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void AllowAccessToAccount(final String contact, String password) {
 
-
+        //login -> username and password validation
         fAuth.signInWithEmailAndPassword(contact, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

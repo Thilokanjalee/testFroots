@@ -73,6 +73,7 @@ public class RegisterUserActivity extends AppCompatActivity {
         final String email = txtUserEmail.getText().toString();
         final String password = txtUserPassword.getText().toString();
 
+        //required fields validations
         if (TextUtils.isEmpty(name)) {
             Toast.makeText(this, "Please Enter your name", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(contact)) {
@@ -96,6 +97,7 @@ public class RegisterUserActivity extends AppCompatActivity {
             loadingBar.setCanceledOnTouchOutside(false);
             loadingBar.show();
 
+            //create user
             fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
